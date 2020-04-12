@@ -19,6 +19,8 @@ import GirlModal from "../assets/images/portfolio/modals/m-girl.jpg";
 import OrigamiModal from "../assets/images/portfolio/modals/m-origami.jpg";
 import RetrocamModal from "../assets/images/portfolio/modals/m-retrocam.jpg";
 
+import myschema from "../assets/images/portfolio/query.gif";
+
 const Portfolio = () => (
   <section id="portfolio">
     <div className="row">
@@ -32,10 +34,10 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="#modal-01" title="">
-                <img alt="" src={Coffee} />
+                <img alt="" src={myschema} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>Coffee</h5>
+                    <h5>MySchemaQL</h5>
                     <p>Illustrration</p>
                   </div>
                 </div>
@@ -170,7 +172,7 @@ const Portfolio = () => (
       <div id="modal-01" className="popup-modal mfp-hide">
         <img
           className="scale-with-grid"
-          src={CoffeeModal}
+          src={myschema}
           alt=""
         />
 

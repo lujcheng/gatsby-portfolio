@@ -1174,33 +1174,56 @@ ul#nav li.current a {
   border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  width: 60%;
+.versioncontrol {
+  width: 75%;
   -moz-animation: photoshop 2s ease;
   -webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  width: 55%;
+
+.htmlcss {
+  width: 70%;
+  -moz-animation: photoshop 2s ease;
+  -webkit-animation: photoshop 2s ease;
+}
+.javascript {
+  width: 75%;
   -moz-animation: illustrator 2s ease;
   -webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  width: 50%;
+.react {
+  width: 85%;
   -moz-animation: wordpress 2s ease;
   -webkit-animation: wordpress 2s ease;
 }
-.css {
-  width: 90%;
+.node {
+  width: 60%;
   -moz-animation: css 2s ease;
   -webkit-animation: css 2s ease;
 }
-.html5 {
-  width: 80%;
+.python {
+  width: 40%;
   -moz-animation: html5 2s ease;
   -webkit-animation: html5 2s ease;
 }
-.jquery {
+
+.ruby {
+  width: 15%;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
+}
+
+.apirest {
+  width: 65%;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
+}
+.database{
   width: 50%;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
+}
+.devops {
+  width: 25%;
   -moz-animation: jquery 2s ease;
   -webkit-animation: jquery 2s ease;
 }
@@ -1560,7 +1583,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+  background: #1f1f1f url(../images/interests-bg.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
