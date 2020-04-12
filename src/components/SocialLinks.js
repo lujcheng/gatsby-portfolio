@@ -12,11 +12,6 @@ const SocialLinks = () => (
   <ul className="social">
     <li>
       <a href="#">
-        <FaFacebook />
-      </a>
-    </li>
-    <li>
-      <a href="#">
         <FaTwitter />
       </a>
     </li>
