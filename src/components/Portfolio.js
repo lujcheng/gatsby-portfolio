@@ -20,9 +20,11 @@ import OrigamiModal from "../assets/images/portfolio/modals/m-origami.jpg";
 import RetrocamModal from "../assets/images/portfolio/modals/m-retrocam.jpg";
 
 import myschema from "../assets/images/portfolio/myschema.jpg";
-import myschemaModal from "../assets/images/portfolio/modals/query.gif";
+import myschemaModal from "../assets/images/portfolio/modals/schemaql.gif";
 import arima from "../assets/images/portfolio/arima.png";
 import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
+import chatty from "../assets/images/portfolio/chattyapp.png";
+import chattyModal from "../assets/images/portfolio/modals/chatty.gif";
 
 const Portfolio = () => (
   <section id="portfolio">
@@ -58,7 +60,7 @@ const Portfolio = () => (
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>Arima</h5>
-                    <p>Dashboard</p>
+                    <p>Datavisualization Dashboard</p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -71,11 +73,11 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="#modal-03" title="">
-                <img alt="" src={Judah} />
+                <img alt="" src={chatty} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>Judah</h5>
-                    <p>Webdesign</p>
+                    <h5>Chatty App</h5>
+                    <p>An experiment with web sockets</p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -206,12 +208,10 @@ const Portfolio = () => (
         <div className="description-box">
           <h4>Arima Dashboard</h4>
           <p>
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit.
+            Arima is an AI startup using Machine Learning to combine data from different sources into a single source of truth to provide Insights into Market Research. Arima provides a dashboard equipped with data visualization tools that allow users to depict trends, changes, and densities in the data. APIs are available for those that require a more integrated solution.
           </p>
           <span className="categories">
-            <FaTag />Branding, Web Development
+            <FaTag />Flask, React, Plotly, Material-UI, MySQL, Firebase, Google Cloud Platform, Docker
           </span>
         </div>
 
@@ -224,24 +224,22 @@ const Portfolio = () => (
       <div id="modal-03" className="popup-modal mfp-hide">
         <img
           className="scale-with-grid"
-          src={JudahModal}
+          src={chattyModal}
           alt=""
         />
 
         <div className="description-box">
-          <h4>Judah</h4>
+          <h4>Chatty App</h4>
           <p>
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit.
+            A web application that allows users to choose their name and chat with others on the same local server
           </p>
           <span className="categories">
-            <FaTag />Branding
+            <FaTag />React, Web Sockets, Express
           </span>
         </div>
 
         <div className="link-box">
-          <a href="http://www.behance.net">Details</a>
+          <a href="https://github.com/Renkinjutsu/Chatty-App">Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
