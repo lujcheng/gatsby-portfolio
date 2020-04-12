@@ -19,13 +19,16 @@ import GirlModal from "../assets/images/portfolio/modals/m-girl.jpg";
 import OrigamiModal from "../assets/images/portfolio/modals/m-origami.jpg";
 import RetrocamModal from "../assets/images/portfolio/modals/m-retrocam.jpg";
 
-import myschema from "../assets/images/portfolio/query.gif";
+import myschema from "../assets/images/portfolio/myschema.jpg";
+import myschemaModal from "../assets/images/portfolio/modals/query.gif";
+import arima from "../assets/images/portfolio/arima.png";
+import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
 
 const Portfolio = () => (
   <section id="portfolio">
     <div className="row">
       <div className="twelve columns collapsed">
-        <h1>Check Out Some of My Works.</h1>
+        <h1>Check Out Some of My Projects.</h1>
 
         <div
           id="portfolio-wrapper"
@@ -38,7 +41,7 @@ const Portfolio = () => (
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>MySchemaQL</h5>
-                    <p>Illustrration</p>
+                    <p>Single-Page Application</p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -51,11 +54,11 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="#modal-02" title="">
-                <img alt="" src={Console} />
+                <img alt="" src={arima} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>Console</h5>
-                    <p>Web Development</p>
+                    <h5>Arima</h5>
+                    <p>Dashboard</p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -172,24 +175,23 @@ const Portfolio = () => (
       <div id="modal-01" className="popup-modal mfp-hide">
         <img
           className="scale-with-grid"
-          src={myschema}
+          src={myschemaModal}
           alt=""
         />
 
         <div className="description-box">
-          <h4>Coffee Cup</h4>
+          <h4>MySchemaQL</h4>
           <p>
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit.
+            A single page Application for users to plan and visualize Entity-Relationship-Diagrams and interact with data
+            using SQL queries
           </p>
           <span className="categories">
-            <FaTag /> Branding, Webdesign
+            <FaTag /> SPA, React, Netlify
           </span>
         </div>
 
         <div className="link-box">
-          <a href="http://www.behance.net">Details</a>
+          <a href="https://myschemaql.netlify.com/">Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
@@ -197,12 +199,12 @@ const Portfolio = () => (
       <div id="modal-02" className="popup-modal mfp-hide">
         <img
           className="scale-with-grid"
-          src={ConsoleModal}
+          src={arimaModal}
           alt=""
         />
 
         <div className="description-box">
-          <h4>Console</h4>
+          <h4>Arima Dashboard</h4>
           <p>
             Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
             lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
@@ -214,7 +216,7 @@ const Portfolio = () => (
         </div>
 
         <div className="link-box">
-          <a href="http://www.behance.net">Details</a>
+          <a href="http://arimainsights.com/">Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
