@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCloudDownload } from "react-icons/lib/fa";
 
-import profilePic from "../assets/images/profilepic.jpg";
+import profilePic from "../assets/images/profile.jpg";
 
 const About = () => (
   <section id="about">
@@ -41,7 +41,7 @@ const About = () => (
           </div>
           <div className="columns download">
             <p>
-              <a href="#" className="button">
+              <a href="https://resume.creddle.io/resume/6kv0z12yze3" className="button">
                 <FaCloudDownload /> Download Resume
               </a>
             </p>
