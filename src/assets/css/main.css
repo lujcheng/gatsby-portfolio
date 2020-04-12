@@ -837,7 +837,7 @@ body {
 
 header {
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
   background: #161415 url(../images/header-background.jpg) no-repeat top center;
@@ -1001,6 +1001,10 @@ ul#nav li a {
 ul#nav li a:active {
   background-color: transparent !important;
 }
+ul#nav li.dark a {
+  color: #000;
+}
+
 ul#nav li.current a {
   color: #f06000;
 }
@@ -1014,6 +1018,7 @@ ul#nav li.current a {
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 #about a,
