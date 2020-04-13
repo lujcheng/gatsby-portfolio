@@ -29,14 +29,17 @@ class Navigation extends React.Component {
       let aboutAnchor = document.getElementById("about").getBoundingClientRect().y
       let resumeAnchor = document.getElementById("resume").getBoundingClientRect().y
       let portfolioAnchor = document.getElementById("portfolio").getBoundingClientRect().y
+      let interestsAnchor = document.getElementById("testimonials").getBoundingClientRect().y
       if (homeAnchor <= 0 && aboutAnchor > 0) {
         this.setState({pathname: "#home", background: 'light'})
       } else if (aboutAnchor <= 0 && resumeAnchor > 0) {
         this.setState({pathname: "#about", background: 'light'})
       } else if (resumeAnchor <= 0 && portfolioAnchor > 0) {
         this.setState({pathname: "#resume", background: 'dark'})
-      } else if (portfolioAnchor <= 0) {
+      } else if (portfolioAnchor <= 0 && interestsAnchor > 0) {
         this.setState({pathname: "#portfolio", background: 'dark'})
+      } else if (interestsAnchor <= 0) {
+        this.setState({pathname: "#testimonials", background: 'light'})
       }
     })
   }

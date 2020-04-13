@@ -9,7 +9,10 @@ const Footer = () => (
         <SocialLinks />
 
         <ul className="copyright">
-          <li>&copy; Copyright 2018 CeeVee</li>
+          <li>
+            Thanks for reading!
+          </li>
+          {/* <li>&copy; Copyright 2018 CeeVee</li>
           <li>
             Design by{" "}
             <a title="Styleshout" href="http://www.styleshout.com/">
@@ -19,7 +22,7 @@ const Footer = () => (
           <li>
             Developed in React ⚛️ by{" "}
             <a href="http://www.amanhimself.me">Aman Mittal</a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
