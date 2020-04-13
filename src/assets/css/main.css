@@ -1603,6 +1603,8 @@ call-to-action .button {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  font-weight: 500;
 }
 #testimonials h1 span {
   display: none;
@@ -1626,7 +1628,8 @@ call-to-action .button {
   margin: 0 0px 30px 0px;
   padding-left: 0;
   position: relative;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  font-weight: bold;
 }
 #testimonials blockquote:before {
   content: none;

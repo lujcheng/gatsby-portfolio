@@ -5,7 +5,7 @@ const settings = {
   // dots: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
+  speed: 700,
   slideToShow: 1,
   slideToScroll: 1,
   swipeToSlide: true
@@ -23,9 +23,9 @@ const Testimonials = () => (
               <li>
                 <blockquote>
                   <p>
-                    Value investing.
+                    Value investing
                     <br/>
-                    Some of my Favorite books:
+                    Some of my favorite books:
                     <br/>
                     Financial Shenanigans - Howard M. Schilit
                     <br/>
@@ -40,7 +40,7 @@ const Testimonials = () => (
               <li>
                 <blockquote>
                   <p>
-                    Photography.
+                    Photography
                     <br/>
                     Nothing too serious, I use a Fuji XT-1. The photos you see on this site are taken with a 35mm lens.
                   </p>
@@ -49,7 +49,7 @@ const Testimonials = () => (
               <li>
                 <blockquote>
                   <p>
-                    Volleyball.
+                    Volleyball
                     <br/>
                     I love all sports, but this is one of the few I still play. A few years ago, I was part of a competitive league that held competitions across Canada and the United States of America.
                   </p>
