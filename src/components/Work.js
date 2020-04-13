@@ -11,9 +11,9 @@ const Work = () => (
     <div className="nine columns main-col">
       <div className="row item">
         <div className="twelve columns">
-          <h3>Doing it all at an AI startup</h3>
+          <h3>Doing it all at an A.I. startup</h3>
           <h4>Arima</h4>
-          <p> Arima is an AI startup using Machine Learning to combine data from different sources into a single source of truth to provide Insights into Market Research. Arima provides a dashboard equipped with data visualization tools that allow users to depict trends, changes, and densities in the data. APIs are available for those that require a more integrated solution. </p>
+          <p> Arima uses <strong style={{fontWeight: "700"}}>Machine Learning</strong> to combine data from different sources into a single source of truth to provide insights into <strong style={{fontWeight: "700"}}>Consumer Data</strong>. Arima provides a dashboard equipped with <strong style={{fontWeight: "700"}}>data visualization</strong> tools that allow users to depict trends, changes, and densities in the data. APIs are available for those that require a more integrated solution. </p>
 
           <h4 className="info">
             Lead Software Engineer
@@ -27,6 +27,7 @@ const Work = () => (
             <strong style={{fontWeight: "700"}}>Platform and Technical Design</strong> - Led the selection of project hosting platform and technology stack according to project needs
             <br/>
             <strong style={{fontWeight: "700"}}>Growth Roadmap and Innovation </strong>- Led the development of our digital products while considering goals, strategy, UX, security, and budgets
+            <br/>
             <strong style={{fontWeight: "700"}}>Dev Ops & MVP </strong> - Deployed, provisioned and maintained Web Applications and API's on Google Cloud Platform with App Engine and Docker. Applied concepts of Agile web development and planned "sprints" to satisfy deadlines for individual Project requirements, while keeping a modular design to build towards larger scalable Products
             <br/>
             <strong style={{fontWeight: "700"}}>QA and Product testing</strong> - Responsible for debugging application and deployment issues. Monitored the progress of products. Conducted research into user personas and use cases. Led product design using UI/UX concepts

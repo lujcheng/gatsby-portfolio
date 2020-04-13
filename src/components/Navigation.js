@@ -68,7 +68,7 @@ class Navigation extends React.Component {
         </li>
         <li className={isCurrent('#testimonials', pathname, this.state.background)}>
           <a className="smoothscroll" href="#testimonials">
-            Testimonials
+            Interests
           </a>
         </li>
         <li className={isCurrent('#footer', pathname, this.state.background)}>
