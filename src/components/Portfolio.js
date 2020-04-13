@@ -20,11 +20,14 @@ import OrigamiModal from "../assets/images/portfolio/modals/m-origami.jpg";
 import RetrocamModal from "../assets/images/portfolio/modals/m-retrocam.jpg";
 
 import myschema from "../assets/images/portfolio/myschema.jpg";
-import myschemaModal from "../assets/images/portfolio/modals/schemaql.gif";
 import arima from "../assets/images/portfolio/arima.png";
-import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
 import chatty from "../assets/images/portfolio/chattyapp.png";
+import jungle from "../assets/images/portfolio/jungle.png";
+
+import myschemaModal from "../assets/images/portfolio/modals/schemaql.gif";
+import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
 import chattyModal from "../assets/images/portfolio/modals/chatty.gif";
+import jungleModal from "../assets/images/portfolio/modals/jungle.gif";
 
 const Portfolio = () => (
   <section id="portfolio">
@@ -90,11 +93,11 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="#modal-04" title="">
-                <img alt="" src={IntoTheLight} />
+                <img alt="" src={jungle} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>Into The Light</h5>
-                    <p>Photography</p>
+                    <h5>Jungle Rails</h5>
+                    <p>An e-commerce Platform</p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -247,24 +250,22 @@ const Portfolio = () => (
       <div id="modal-04" className="popup-modal mfp-hide">
         <img
           className="scale-with-grid"
-          src={IntoTheLightModal}
+          src={jungleModal}
           alt=""
         />
 
         <div className="description-box">
-          <h4>Into the Light</h4>
+          <h4>Jungle Rails</h4>
           <p>
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit.
+          An e-commerce platform created with ruby and rails, a Model-View-Controller framework. Created features like product categories, cart, checkout, orders, payment, reviews, and account management.
           </p>
           <span className="categories">
-            <FaTag />Photography
+            <FaTag />Ruby on Rails, Active Record, Bcrypt, Stripe API
           </span>
         </div>
 
         <div className="link-box">
-          <a href="http://www.behance.net">Details</a>
+          <a href="https://github.com/Renkinjutsu/jungle-rails">Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
