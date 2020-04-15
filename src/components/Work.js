@@ -22,17 +22,7 @@ const Work = () => (
           </h4>
 
           <p>
-            Responsibilities:
-            <br/>
-            <strong style={{fontWeight: "700"}}>Platform and Technical Design</strong> - Led the selection of project hosting platform and technology stack according to project needs
-            <br/>
-            <strong style={{fontWeight: "700"}}>Growth Roadmap and Innovation </strong>- Led the development of our digital products while considering goals, strategy, UX, security, and budgets
-            <br/>
-            <strong style={{fontWeight: "700"}}>Dev Ops & MVP </strong> - Deployed, provisioned and maintained Web Applications and API's on Google Cloud Platform with App Engine and Docker. Applied concepts of Agile web development and planned "sprints" to satisfy deadlines for individual Project requirements, while keeping a modular design to build towards larger scalable Products
-            <br/>
-            <strong style={{fontWeight: "700"}}>QA and Product testing</strong> - Responsible for debugging application and deployment issues. Monitored the progress of products. Conducted research into user personas and use cases. Led product design using UI/UX concepts
-            <br/>
-            <strong style={{fontWeight: "700"}}>Cybersecurity</strong> - Responsible for foreseeing security issues and planning product design around current best practices
+            In this role, I led the design and production of our data visualization dashboard and data as an API products. 
           </p>
 
           <h4 className="info">
@@ -42,15 +32,8 @@ const Work = () => (
           </h4>
 
           <p>
-            Responsibilities:
-            <br/>
-            <strong style={{fontWeight: "700"}}> Front End Development</strong> - Designed a responsive and interactive Web Application using Modular Smart and Dumb Components with React/Redux for Visualizing 3-4 billion data points
-            <br/>
-            <strong style={{fontWeight: "700"}}>Back End Development</strong> - Created web servers and API's using Flask (App Factory) framework designed with REST architecture and Caching
-            <br/>
-            <strong style={{fontWeight: "700"}}>Database Administration</strong> - Designed, optimized, maintained SQL and NoSQL databases for large datasets, and integrated them into web applications and APIs. Improved SQL query execution by decreasing time by a factor of 1000x, for 3-4 billion data points
-            <br/>
-            <strong style={{fontWeight: "700"}}>OAuth 2.0 </strong> - Implemented User Authorization using Authorization Code Grant Flow to manage login, permissions and track user activity with Okta
+            In this role, I was responsible for front-end, back-end, DevOps, user management and database administration.
+            Our Tech Stack: React, Flask, Google Cloud Platform, Okta(OAuth 2.0), SQL, Firebase
           </p>
 
         </div>

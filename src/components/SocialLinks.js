@@ -1,32 +1,27 @@
 import React from "react";
 import {
-  FaFacebook,
+  FaLinkedinSquare,
   FaGithub,
-  FaGooglePlus,
   FaInstagram,
   FaTwitter
 } from "react-icons/lib/fa";
 // https://gorangajic.github.io/react-icons/fa.html
+import { MdMail } from "react-icons/lib/md"
 
 const SocialLinks = () => (
   <ul className="social">
     <li>
-      <a href="#">
-        <FaTwitter />
+      <a href="https://www.linkedin.com/in/luccheng/">
+        <FaLinkedinSquare />
       </a>
     </li>
     <li>
-      <a href="#">
-        <FaGooglePlus />
+      <a href="mailto:lucas.cheng12@gmail.com">
+        <MdMail />
       </a>
     </li>
     <li>
-      <a href="#">
-        <FaInstagram />
-      </a>
-    </li>
-    <li>
-      <a href="#">
+      <a href="https://github.com/Renkinjutsu">
         <FaGithub />
       </a>
     </li>
