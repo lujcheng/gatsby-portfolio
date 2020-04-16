@@ -18,7 +18,7 @@ const About = () => (
           <br/>
           I stumbled onto programming one day.
           <br/>
-          The potential, people and stories inspired me, and little by little, I was drawn in. Not long after I started my new career and the rewards have been greater than I could imagine. Must be Magic.
+          The potential, people and stories inspired me, and little by little, I was drawn in. Not long after I started my new career and almost suddenly I'm able to do all these amazing things. Must be Magic.
         </p>
         <div className="row">
           <div className="columns contact-details">
