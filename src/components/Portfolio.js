@@ -1,23 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaPlus, FaTag } from "react-icons/lib/fa";
-
-import Coffee from "../assets/images/portfolio/coffee.jpg";
-import Console from "../assets/images/portfolio/console.jpg";
-import Judah from "../assets/images/portfolio/judah.jpg";
-import IntoTheLight from "../assets/images/portfolio/into-the-light.jpg";
-import Farmerboy from "../assets/images/portfolio/farmerboy.jpg";
-import Girl from "../assets/images/portfolio/girl.jpg";
-import Origami from "../assets/images/portfolio/origami.jpg";
-import Retrocam from "../assets/images/portfolio/retrocam.jpg";
-
-import CoffeeModal from "../assets/images/portfolio/modals/m-coffee.jpg";
-import ConsoleModal from "../assets/images/portfolio/modals/m-console.jpg";
-import JudahModal from "../assets/images/portfolio/modals/m-judah.jpg";
-import IntoTheLightModal from "../assets/images/portfolio/modals/m-intothelight.jpg";
-import FarmerboyModal from "../assets/images/portfolio/modals/m-farmerboy.jpg";
-import GirlModal from "../assets/images/portfolio/modals/m-girl.jpg";
-import OrigamiModal from "../assets/images/portfolio/modals/m-origami.jpg";
-import RetrocamModal from "../assets/images/portfolio/modals/m-retrocam.jpg";
 
 import myschema from "../assets/images/portfolio/myschema.jpg";
 import arima from "../assets/images/portfolio/arima.png";
@@ -29,8 +11,19 @@ import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
 import chattyModal from "../assets/images/portfolio/modals/chatty.gif";
 import jungleModal from "../assets/images/portfolio/modals/jungle.gif";
 
-const Portfolio = () => (
+
+const click = (x) => {
+  window.location.href = '#portfolio'
+}
+
+const prop = (event) => {
+  event.stopPropagation()
+}
+function Portfolio ()  {
+  const [bg, setBg] = useState("");
+  return (
   <section id="portfolio">
+ 
     <div className="row">
       <div className="twelve columns collapsed">
         <h1>Check Out Some of My Projects.</h1>
@@ -111,7 +104,7 @@ const Portfolio = () => (
         </div>
       </div>
 
-      <div id="modal-01" className="popup-modal mfp-hide">
+      <div id="modal-01" className="popup-modal mfp-hide" onClick={() => click("modal-01")}>
         <img
           className="scale-with-grid"
           src={myschemaModal}
@@ -130,12 +123,12 @@ const Portfolio = () => (
         </div>
 
         <div className="link-box">
-          <a href="https://myschemaql.netlify.com/">Details</a>
+          <a href="https://myschemaql.netlify.com/" onClick={prop}>Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
 
-      <div id="modal-02" className="popup-modal mfp-hide">
+      <div id="modal-02" className="popup-modal mfp-hide" onClick={() => click("modal-02")}>
         <img
           className="scale-with-grid"
           src={arimaModal}
@@ -153,12 +146,12 @@ const Portfolio = () => (
         </div>
 
         <div className="link-box">
-          <a href="http://arimainsights.com/">Details</a>
+          <a href="http://arimainsights.com/" onClick={prop}>Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
 
-      <div id="modal-03" className="popup-modal mfp-hide">
+      <div id="modal-03" className="popup-modal mfp-hide" onClick={() => click("modal-03")}>
         <img
           className="scale-with-grid"
           src={chattyModal}
@@ -176,12 +169,12 @@ const Portfolio = () => (
         </div>
 
         <div className="link-box">
-          <a href="https://github.com/Renkinjutsu/Chatty-App">Details</a>
+          <a href="https://github.com/Renkinjutsu/Chatty-App" onClick={prop}>Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
 
-      <div id="modal-04" className="popup-modal mfp-hide">
+      <div id="modal-04" className="popup-modal mfp-hide" onClick={() => click("modal-04")}>
         <img
           className="scale-with-grid"
           src={jungleModal}
@@ -199,13 +192,13 @@ const Portfolio = () => (
         </div>
 
         <div className="link-box">
-          <a href="https://github.com/Renkinjutsu/jungle-rails">Details</a>
+          <a href="https://github.com/Renkinjutsu/jungle-rails" onClick={prop}>Details</a>
           <a href="#portfolio" className="popup-modal-dismiss">Close</a>
         </div>
       </div>
 
     </div>
   </section>
-);
+)};
 
 export default Portfolio;
