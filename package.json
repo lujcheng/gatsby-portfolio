@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "author": "Aman Mittal <amandeepmittal@live.com>",
   "dependencies": {
-    "gatsby": "^1.9.145",
+    "gatsby": "^1.9.279",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-google-fonts": "0.0.3",
@@ -18,6 +18,8 @@
     "gatsby-transformer-remark": "^1.7.21",
     "gatsby-transformer-sharp": "^1.6.14",
     "node-sass": "^4.9.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-icons": "2.2.7",
     "react-slick": "0.16.0",
     "slick-carousel": "1.8.1",

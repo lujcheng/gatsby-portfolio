@@ -12,18 +12,23 @@ import chattyModal from "../assets/images/portfolio/modals/chatty.gif";
 import jungleModal from "../assets/images/portfolio/modals/jungle.gif";
 
 
-const click = (x) => {
-  window.location.href = '#portfolio'
-}
-
-const prop = (event) => {
-  event.stopPropagation()
-}
-function Portfolio ()  {
-  const [bg, setBg] = useState("");
+const Portfolio = (props) => {
+  const stop = (event) => {
+    event.stopPropagation()
+  }
+  const prop = (event) => {
+    event.stopPropagation() 
+    props.setBg(0)
+  }
+  const popup = () => {
+    props.setBg(1)
+  }
   return (
   <section id="portfolio">
- 
+    {props.bg == 1 && 
+      <div id="popup-bg" style={{background: "black", width: '100vw', height:'100vh', position:'fixed', left:'0', top:'0', opacity:'0.7', zIndex:'10'}}> 
+      </div>
+    }
     <div className="row">
       <div className="twelve columns collapsed">
         <h1>Check Out Some of My Projects.</h1>
@@ -36,7 +41,7 @@ function Portfolio ()  {
             <div className="item-wrap">
               <a href="#modal-01" title="">
                 <img alt="" src={myschema} />
-                <div className="overlay">
+                <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
                     <h5>MySchemaQL</h5>
                     <p>Single-Page Application</p>
@@ -53,7 +58,7 @@ function Portfolio ()  {
             <div className="item-wrap">
               <a href="#modal-02" title="">
                 <img alt="" src={arima} />
-                <div className="overlay">
+                <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
                     <h5>Arima</h5>
                     <p>Datavisualization Dashboard</p>
@@ -70,7 +75,7 @@ function Portfolio ()  {
             <div className="item-wrap">
               <a href="#modal-03" title="">
                 <img alt="" src={chatty} />
-                <div className="overlay">
+                <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
                     <h5>Chatty App</h5>
                     <p>An experiment with web sockets</p>
@@ -87,7 +92,7 @@ function Portfolio ()  {
             <div className="item-wrap">
               <a href="#modal-04" title="">
                 <img alt="" src={jungle} />
-                <div className="overlay">
+                <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
                     <h5>Jungle Rails</h5>
                     <p>An e-commerce Platform</p>
@@ -104,7 +109,7 @@ function Portfolio ()  {
         </div>
       </div>
 
-      <div id="modal-01" className="popup-modal mfp-hide" onClick={() => click("modal-01")}>
+      <div id="modal-01" className="popup-modal mfp-hide" onClick={stop}>
         <img
           className="scale-with-grid"
           src={myschemaModal}
@@ -124,11 +129,11 @@ function Portfolio ()  {
 
         <div className="link-box">
           <a href="https://myschemaql.netlify.com/" onClick={prop}>Details</a>
-          <a href="#portfolio" className="popup-modal-dismiss">Close</a>
+          <a href="#portfolio" className="popup-modal-dismiss" onClick={prop}>Close</a>
         </div>
       </div>
 
-      <div id="modal-02" className="popup-modal mfp-hide" onClick={() => click("modal-02")}>
+      <div id="modal-02" className="popup-modal mfp-hide" onClick={stop}>
         <img
           className="scale-with-grid"
           src={arimaModal}
@@ -147,11 +152,11 @@ function Portfolio ()  {
 
         <div className="link-box">
           <a href="http://arimainsights.com/" onClick={prop}>Details</a>
-          <a href="#portfolio" className="popup-modal-dismiss">Close</a>
+          <a href="#portfolio" className="popup-modal-dismiss" onClick={prop}>Close</a>
         </div>
       </div>
 
-      <div id="modal-03" className="popup-modal mfp-hide" onClick={() => click("modal-03")}>
+      <div id="modal-03" className="popup-modal mfp-hide" onClick={stop}>
         <img
           className="scale-with-grid"
           src={chattyModal}
@@ -170,11 +175,11 @@ function Portfolio ()  {
 
         <div className="link-box">
           <a href="https://github.com/Renkinjutsu/Chatty-App" onClick={prop}>Details</a>
-          <a href="#portfolio" className="popup-modal-dismiss">Close</a>
+          <a href="#portfolio" className="popup-modal-dismiss" onClick={prop}>Close</a>
         </div>
       </div>
 
-      <div id="modal-04" className="popup-modal mfp-hide" onClick={() => click("modal-04")}>
+      <div id="modal-04" className="popup-modal mfp-hide" onClick={stop}>
         <img
           className="scale-with-grid"
           src={jungleModal}
@@ -193,7 +198,7 @@ function Portfolio ()  {
 
         <div className="link-box">
           <a href="https://github.com/Renkinjutsu/jungle-rails" onClick={prop}>Details</a>
-          <a href="#portfolio" className="popup-modal-dismiss">Close</a>
+          <a href="#portfolio" className="popup-modal-dismiss" onClick={prop}>Close</a>
         </div>
       </div>
 
