@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import { FaPlus, FaTag } from "react-icons/lib/fa";
 
-import myschema from "../assets/images/portfolio/myschema.jpg";
-import arima from "../assets/images/portfolio/arima.png";
-import chatty from "../assets/images/portfolio/chattyapp.png";
-import jungle from "../assets/images/portfolio/jungle.png";
+import myschema from "../assets/images/portfolio/myschema-compressor.jpg";
+import arima from "../assets/images/portfolio/arima-compressor.png";
+import chatty from "../assets/images/portfolio/chattyapp-compressor.png";
+import jungle from "../assets/images/portfolio/jungle-compressor.png";
 
-import myschemaModal from "../assets/images/portfolio/modals/schemaql.gif";
-import arimaModal from "../assets/images/portfolio/modals/arimadash.png";
-import chattyModal from "../assets/images/portfolio/modals/chatty.gif";
-import jungleModal from "../assets/images/portfolio/modals/jungle.gif";
+import myschemaModal from "../assets/images/portfolio/modals/schemaql-compressor.gif";
+import arimaModal from "../assets/images/portfolio/modals/arimadash-compressor.png";
+import chattyModal from "../assets/images/portfolio/modals/chatty-compressor.gif";
+import jungleModal from "../assets/images/portfolio/modals/jungle-comp.gif";
 
 
 const Portfolio = (props) => {
@@ -26,7 +26,7 @@ const Portfolio = (props) => {
   return (
   <section id="portfolio">
     {props.bg == 1 && 
-      <div id="popup-bg" style={{background: "black", width: '100vw', height:'100vh', position:'fixed', left:'0', top:'0', opacity:'0.7', zIndex:'10'}}> 
+      <div id="popup-bg" style={{background: "black", width: '100vw', height:'100vh', position:'fixed', left:'0', top:'0', opacity:'0.7 ', zIndex:'10'}}> 
       </div>
     }
     <div className="row">
