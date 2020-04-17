@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SocialLinks from "./SocialLinks";
 
-const Banner = () => (
-  <div className="row banner">
+const Banner = () => {
+  return (
+  <div className="row banner" >
     <div className="banner-text">
       <h1 className="responsive-headline">I'm Lucas Cheng.</h1>
       <h3>
@@ -22,6 +23,6 @@ const Banner = () => (
       <SocialLinks />
     </div>
   </div>
-);
+)};
 
 export default Banner;
