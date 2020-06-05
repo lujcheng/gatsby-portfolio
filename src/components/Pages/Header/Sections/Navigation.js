@@ -5,18 +5,18 @@ const isCurrent = (anchor, pathname) =>
   pathname.endsWith(anchor) ? 'current' : '';
 
 const Navigation = () => {
-  const [state, setState] = useState({pathname: '#home', background: 'light'})
+  const [state, setState] = useState({
+    pathname: '#home',
+    background: 'light',
+  });
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setState(getPageBreak());
     });
-  }, [])
+  }, []);
   return (
-    <nav
-      id="nav-wrap"
-      className={state.background == 'dark' ? 'navBg' : ''}
-    >
+    <nav id="nav-wrap" className={state.background == 'dark' ? 'navBg' : ''}>
       <a className="mobile-btn" href="#nav-wrap" />
       <ul id="nav" className="nav">
         <li className={isCurrent('#home', state.pathname)}>
@@ -52,6 +52,6 @@ const Navigation = () => {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;
