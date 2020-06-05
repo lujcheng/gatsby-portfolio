@@ -1,8 +1,6 @@
 import React from "react";
 
-import Education from "./Education";
-import Work from "./Work";
-import Skills from "./Skills";
+import { Education, Work, Skills } from "./Sections"
 
 const Resume = () => (
   <section id="resume">

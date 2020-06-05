@@ -1,14 +1,13 @@
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
-var cH;
-var cW;
-var bgColor = "#FF6138";
-var animations = [];
-var circles = [];
+const c = document.getElementById("c");
+const ctx = c.getContext("2d");
+const cH;
+const cW;
+const bgColor = "#FF6138";
+const animations = [];
 
-var colorPicker = (function() {
-  var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
-  var index = 0;
+const colorPicker = (function() {
+  const colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
+  let index = 0;
   function next() {
     index = index++ < colors.length-1 ? index : 0;
     return colors[index];
@@ -23,13 +22,13 @@ var colorPicker = (function() {
 })();
 
 function removeAnimation(animation) {
-  var index = animations.indexOf(animation);
+  const index = animations.indexOf(animation);
   if (index > -1) animations.splice(index, 1);
 }
 
 function calcPageFillRadius(x, y) {
-  var l = Math.max(x - 0, cW - x);
-  var h = Math.max(y - 0, cH - y);
+  const l = Math.max(x - 0, cW - x);
+  const h = Math.max(y - 0, cH - y);
   return Math.sqrt(Math.pow(l, 2) + Math.pow(h, 2));
 }
 
@@ -43,19 +42,19 @@ export default function handleEvent(e) {
       e.preventDefault();
       e = e.touches[0];
     }
-    var currentColor = colorPicker.current();
-    var nextColor = colorPicker.next();
-    var targetR = calcPageFillRadius(e.pageX, e.pageY);
-    var rippleSize = Math.min(200, (cW * .4));
-    var minCoverDuration = 750;
+    const currentColor = colorPicker.current();
+    const nextColor = colorPicker.next();
+    const targetR = calcPageFillRadius(e.pageX, e.pageY);
+    const rippleSize = Math.min(200, (cW * .4));
+    const minCoverDuration = 750;
     
-    var pageFill = new Circle({
+    const pageFill = new Circle({
       x: e.pageX,
       y: e.pageY,
       r: 0,
       fill: nextColor
     });
-    var fillAnimation = anime({
+    const fillAnimation = anime({
       targets: pageFill,
       r: targetR,
       duration:  Math.max(targetR / 2 , minCoverDuration ),
@@ -66,7 +65,7 @@ export default function handleEvent(e) {
       }
     });
     
-    var ripple = new Circle({
+    const ripple = new Circle({
       x: e.pageX,
       y: e.pageY,
       r: 0,
@@ -77,7 +76,7 @@ export default function handleEvent(e) {
       },
       opacity: 1
     });
-    var rippleAnimation = anime({
+    const rippleAnimation = anime({
       targets: ripple,
       r: rippleSize,
       opacity: 0,
@@ -86,9 +85,9 @@ export default function handleEvent(e) {
       complete: removeAnimation
     });
     
-    var particles = [];
-    for (var i=0; i<32; i++) {
-      var particle = new Circle({
+    const particles = [];
+    for (let i=0; i<32; i++) {
+      const particle = new Circle({
         x: e.pageX,
         y: e.pageY,
         fill: currentColor,
@@ -96,7 +95,7 @@ export default function handleEvent(e) {
       })
       particles.push(particle);
     }
-    var particlesAnimation = anime({
+    const particlesAnimation = anime({
       targets: particles,
       x: function(particle){
         return particle.x + anime.random(rippleSize, -rippleSize);
@@ -113,7 +112,7 @@ export default function handleEvent(e) {
 }
 
 function extend(a, b){
-  for(var key in b) {
+  for(let key in b) {
     if(b.hasOwnProperty(key)) {
       a[key] = b[key];
     }
@@ -121,7 +120,7 @@ function extend(a, b){
   return a;
 }
 
-var Circle = function(opts) {
+const Circle = function(opts) {
   extend(this, opts);
 }
 
@@ -142,7 +141,7 @@ Circle.prototype.draw = function() {
   ctx.globalAlpha = 1;
 }
 
-var animate = anime({
+const animate = anime({
   duration: Infinity,
   update: function() {
     ctx.fillStyle = bgColor;
@@ -155,7 +154,7 @@ var animate = anime({
   }
 });
 
-var resizeCanvas = function() {
+const resizeCanvas = function() {
   cW = window.innerWidth;
   cH = window.innerHeight;
   c.width = cW * devicePixelRatio;
@@ -179,7 +178,7 @@ var resizeCanvas = function() {
 })();
 
 function handleInactiveUser() {
-  var inactive = setTimeout(function(){
+  const inactive = setTimeout(function(){
     fauxClick(cW/2, cH/2);
   }, 2000);
   
@@ -201,7 +200,7 @@ function startFauxClicking() {
 }
 
 function fauxClick(x, y) {
-  var fauxClick = new Event("mousedown");
+  const fauxClick = new Event("mousedown");
   fauxClick.pageX = x;
   fauxClick.pageY = y;
   document.dispatchEvent(fauxClick);

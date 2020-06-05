@@ -394,10 +394,8 @@ dd { margin: 0 0 0 20px; }
 }
 .dictionary-style dd:before {
   .pagination {
-	content: counter(definitions, decimal) ". ";
-}
-
-/* Pagination */
+    content: counter(definitions, decimal) ". ";
+  }
    margin: 36px auto;
    text-align: center;
 }

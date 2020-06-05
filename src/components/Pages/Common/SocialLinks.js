@@ -1,11 +1,8 @@
 import React from "react";
 import {
   FaLinkedinSquare,
-  FaGithub,
-  FaInstagram,
-  FaTwitter
+  FaGithub
 } from "react-icons/lib/fa";
-// https://gorangajic.github.io/react-icons/fa.html
 import { MdMail } from "react-icons/lib/md"
 
 const SocialLinks = () => (

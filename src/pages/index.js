@@ -3,12 +3,13 @@ import Link from "gatsby-link";
 
 import "../assets/css/main.css";
 
-import Header from "../components/Header";
-import About from "../components/About";
-import Resume from "../components/Resume";
-import Portfolio from "../components/Portfolio";
-import Testimonials from "../components/Testimonials";
-import Footer from "../components/Footer";
+
+import { Header } from "../components/Pages/Header";
+import { About } from "../components/Pages/About";
+import { Resume } from "../components/Pages/Resume";
+import { Portfolio } from "../components/Pages/Portfolio";
+import { Interests } from "../components/Pages/Interests";
+import { Footer } from "../components/Pages/Footer";
 
 const IndexPage = () => {
   const [bg, setBg] = useState(0);
@@ -24,7 +25,7 @@ const IndexPage = () => {
     <Portfolio setBg={setBg} bg={bg}/>
     <About />
     <Resume />
-    <Testimonials />
+    <Interests />
     <Footer />
   </div>
 )};

@@ -1,5 +1,5 @@
 import React from "react";
-import SocialLinks from "./SocialLinks";
+import { SocialLinks } from "../Common";
 import { FaChevronCircleUp } from "react-icons/lib/fa";
 
 const Footer = () => (
@@ -7,22 +7,29 @@ const Footer = () => (
     <div className="row">
       <div className="twelve columns">
         <SocialLinks />
-
         <ul className="copyright">
           <li>
             Thanks for reading!
           </li>
-          {/* <li>&copy; Copyright 2018 CeeVee</li>
+          <li>&copy; Copyright 2018 CeeVee</li>
           <li>
-            Design by{" "}
+            Original design by{" "}
             <a title="Styleshout" href="http://www.styleshout.com/">
               Styleshout
             </a>
           </li>
           <li>
-            Developed in React ⚛️ by{" "}
-            <a href="http://www.amanhimself.me">Aman Mittal</a>
-          </li> */}
+            Original work in React ⚛️ by{" "}
+            <a href="http://www.amanhimself.me">
+              Aman Mittal
+            </a>
+          </li>
+          <li>
+            Modified work and design &copy; Copyright 2018 by{" "}
+            <a href="">
+              Lucas Cheng
+            </a>
+          </li>
         </ul>
       </div>
 

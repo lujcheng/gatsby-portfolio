@@ -1,15 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 import { FaPlus, FaTag } from "react-icons/lib/fa";
 
-import myschema from "../assets/images/portfolio/myschema-compressor.jpg";
-import arima from "../assets/images/portfolio/arima-compressor.png";
-import chatty from "../assets/images/portfolio/chattyapp-compressor.png";
-import jungle from "../assets/images/portfolio/jungle-compressor.png";
+import myschema from "../../../assets/images/portfolio/myschema-compressor.jpg";
+import arima from "../../../assets/images/portfolio/arima-compressor.png";
+import chatty from "../../../assets/images/portfolio/chattyapp-compressor.png";
+import jungle from "../../../assets/images/portfolio/jungle-compressor.png";
 
-import myschemaModal from "../assets/images/portfolio/modals/schemaql-compressor.gif";
-import arimaModal from "../assets/images/portfolio/modals/arimadash-compressor.png";
-import chattyModal from "../assets/images/portfolio/modals/chatty-compressor.gif";
-import jungleModal from "../assets/images/portfolio/modals/jungle-comp.gif";
+import myschemaModal from "../../../assets/images/portfolio/modals/schemaql-compressor.gif";
+import arimaModal from "../../../assets/images/portfolio/modals/arimadash-compressor.png";
+import chattyModal from "../../../assets/images/portfolio/modals/chatty-compressor.gif";
+import jungleModal from "../../../assets/images/portfolio/modals/jungle-comp.gif";
 
 
 const Portfolio = (props) => {
@@ -31,20 +31,23 @@ const Portfolio = (props) => {
     }
     <div className="row">
       <div className="twelve columns collapsed">
-        <h1>Check Out Some of My Projects.</h1>
+        <h1>
+          Check Out Some of My Projects.
+        </h1>
 
-        <div
-          id="portfolio-wrapper"
-          className="bgrid-halves cf"
-        >
+        <div id="portfolio-wrapper" className="bgrid-halves cf">
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="#modal-01" title="">
                 <img alt="" src={myschema} />
                 <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
-                    <h5>MySchemaQL</h5>
-                    <p>Single-Page Application</p>
+                    <h5>
+                      MySchemaQL
+                    </h5>
+                    <p>
+                      Single-Page Application
+                    </p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -60,8 +63,12 @@ const Portfolio = (props) => {
                 <img alt="" src={arima} />
                 <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
-                    <h5>Arima</h5>
-                    <p>Datavisualization Dashboard</p>
+                    <h5>
+                      Arima
+                    </h5>
+                    <p>
+                      Datavisualization Dashboard
+                    </p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -77,8 +84,12 @@ const Portfolio = (props) => {
                 <img alt="" src={chatty} />
                 <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
-                    <h5>Chatty App</h5>
-                    <p>An experiment with web sockets</p>
+                    <h5>
+                      Chatty App
+                    </h5>
+                    <p>
+                      An experiment with web sockets
+                    </p>
                   </div>
                 </div>
                 <div className="link-icon">
@@ -94,8 +105,12 @@ const Portfolio = (props) => {
                 <img alt="" src={jungle} />
                 <div className="overlay" onClick={popup}>
                   <div className="portfolio-item-meta">
-                    <h5>Jungle Rails</h5>
-                    <p>An e-commerce Platform</p>
+                    <h5>
+                      Jungle Rails
+                    </h5>
+                    <p>
+                      An e-commerce Platform
+                    </p>
                   </div>
                 </div>
                 <div className="link-icon">
