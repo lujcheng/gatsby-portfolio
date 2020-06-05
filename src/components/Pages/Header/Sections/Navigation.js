@@ -16,7 +16,7 @@ const Navigation = () => {
     });
   }, []);
   return (
-    <nav id="nav-wrap" className={state.background == 'dark' ? 'navBg' : ''}>
+    <nav id="nav-wrap" className={state.background === 'dark' ? 'navBg' : ''}>
       <a className="mobile-btn" href="#nav-wrap" />
       <ul id="nav" className="nav">
         <li className={isCurrent('#home', state.pathname)}>

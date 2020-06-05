@@ -17,7 +17,7 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            Original work in React ⚛️ by{' '}
+            Original work in React by{' '}
             <a href="http://www.amanhimself.me">Aman Mittal</a>
           </li>
           <li>
