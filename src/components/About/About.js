@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCloudDownload } from 'react-icons/lib/fa';
 
-import profilePic from '../../../assets/images/profile-compressor.jpg';
+import profilePic from '../../assets/images/profile-compressor.jpg';
 
 const About = () => (
   <section id="about">

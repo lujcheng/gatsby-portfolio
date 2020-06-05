@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaPlus, FaTag } from 'react-icons/lib/fa';
 
-import myschema from '../../../assets/images/portfolio/myschema-compressor.jpg';
-import arima from '../../../assets/images/portfolio/arima-compressor.png';
-import chatty from '../../../assets/images/portfolio/chattyapp-compressor.png';
-import jungle from '../../../assets/images/portfolio/jungle-compressor.png';
+import myschema from '../../assets/images/portfolio/myschema-compressor.jpg';
+import arima from '../../assets/images/portfolio/arima-compressor.png';
+import chatty from '../../assets/images/portfolio/chattyapp-compressor.png';
+import jungle from '../../assets/images/portfolio/jungle-compressor.png';
 
-import myschemaModal from '../../../assets/images/portfolio/modals/schemaql-compressor.gif';
-import arimaModal from '../../../assets/images/portfolio/modals/arimadash-compressor.png';
-import chattyModal from '../../../assets/images/portfolio/modals/chatty-compressor.gif';
-import jungleModal from '../../../assets/images/portfolio/modals/jungle-comp.gif';
+import myschemaModal from '../../assets/images/portfolio/modals/schemaql-compressor.gif';
+import arimaModal from '../../assets/images/portfolio/modals/arimadash-compressor.png';
+import chattyModal from '../../assets/images/portfolio/modals/chatty-compressor.gif';
+import jungleModal from '../../assets/images/portfolio/modals/jungle-comp.gif';
 
 const Portfolio = props => {
   const stop = event => {

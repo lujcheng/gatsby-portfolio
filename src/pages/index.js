@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import '../assets/css/main.css';
 
-import { Header } from '../components/Pages/Header';
-import { About } from '../components/Pages/About';
-import { Resume } from '../components/Pages/Resume';
-import { Portfolio } from '../components/Pages/Portfolio';
-import { Interests } from '../components/Pages/Interests';
-import { Footer } from '../components/Pages/Footer';
+import { Header } from '../components/Header';
+import { About } from '../components/About';
+import { Resume } from '../components/Resume';
+import { Portfolio } from '../components/Portfolio';
+import { Interests } from '../components/Interests';
+import { Footer } from '../components/Footer';
 
 const IndexPage = () => {
   const [bg, setBg] = useState(0);
