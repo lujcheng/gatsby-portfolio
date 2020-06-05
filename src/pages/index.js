@@ -11,7 +11,7 @@ import { Footer } from '../components/Pages/Footer';
 
 const IndexPage = () => {
   const [bg, setBg] = useState(0);
-  const click = x => {
+  const click = () => {
     if (bg) {
       window.location.href = '#portfolio';
       setBg(0);
