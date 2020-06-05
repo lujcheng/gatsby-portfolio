@@ -1,6 +1,6 @@
-import React from "react";
-import { SocialLinks } from "../Common";
-import { FaChevronCircleUp } from "react-icons/lib/fa";
+import React from 'react';
+import { FaChevronCircleUp } from 'react-icons/lib/fa';
+import { SocialLinks } from '../Common';
 
 const Footer = () => (
   <footer id="footer">
@@ -8,27 +8,21 @@ const Footer = () => (
       <div className="twelve columns">
         <SocialLinks />
         <ul className="copyright">
-          <li>
-            Thanks for reading!
-          </li>
+          <li>Thanks for reading!</li>
           <li>&copy; Copyright 2018 CeeVee</li>
           <li>
-            Original design by{" "}
+            Original design by{' '}
             <a title="Styleshout" href="http://www.styleshout.com/">
               Styleshout
             </a>
           </li>
           <li>
-            Original work in React ⚛️ by{" "}
-            <a href="http://www.amanhimself.me">
-              Aman Mittal
-            </a>
+            Original work in React ⚛️ by{' '}
+            <a href="http://www.amanhimself.me">Aman Mittal</a>
           </li>
           <li>
-            Modified work and design &copy; Copyright 2018 by{" "}
-            <a href="">
-              Lucas Cheng
-            </a>
+            Modified work and design &copy; Copyright 2018 by{' '}
+            <a href="">Lucas Cheng</a>
           </li>
         </ul>
       </div>

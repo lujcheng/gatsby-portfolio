@@ -1,1 +1,1 @@
-export { default as getPageBreak } from "./pageBreak"
+export { default as getPageBreak } from './pageBreak';

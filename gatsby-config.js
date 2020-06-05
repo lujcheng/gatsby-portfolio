@@ -1,29 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: "Lucas Cheng",
-    author: "Lucas Cheng",
-    description: "Portfolio Page"
+    title: 'Lucas Cheng',
+    author: 'Lucas Cheng',
+    description: 'Portfolio Page',
   },
-  pathPrefix: "/",
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
+        pathToConfigModule: `src/utils/typography.js`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`
-      }
+        path: `${__dirname}/src/assets/images`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`librebaskerville`, `open sans`]
-      }
+        fonts: [`librebaskerville`, `open sans`],
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -32,16 +32,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630
-            }
+              maxWidth: 630,
+            },
           },
-          "gatsby-remark-copy-linked-files"
-        ]
-      }
+          'gatsby-remark-copy-linked-files',
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
-  ]
+    `gatsby-plugin-sass`,
+  ],
 };

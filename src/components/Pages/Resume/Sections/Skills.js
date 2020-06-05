@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Skills = () => (
   <div className="row skill">
@@ -10,7 +10,9 @@ const Skills = () => (
 
     <div className="nine columns main-col">
       <p>
-        Below are indicators of my level of comfortable and relative experience in each skill. For a more detailed list of skills, please refer to my resume.
+        Below are indicators of my level of comfortable and relative experience
+        in each skill. For a more detailed list of skills, please refer to my
+        resume.
       </p>
 
       <div className="bars">
@@ -27,7 +29,7 @@ const Skills = () => (
             <span className="bar-expand javascript" />
             <em>Javascript</em>
           </li>
-      
+
           <li>
             <span className="bar-expand react" />
             <em>React</em>

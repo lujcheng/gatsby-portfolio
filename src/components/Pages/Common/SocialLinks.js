@@ -1,9 +1,6 @@
-import React from "react";
-import {
-  FaLinkedinSquare,
-  FaGithub
-} from "react-icons/lib/fa";
-import { MdMail } from "react-icons/lib/md"
+import React from 'react';
+import { FaLinkedinSquare, FaGithub } from 'react-icons/lib/fa';
+import { MdMail } from 'react-icons/lib/md';
 
 const SocialLinks = () => (
   <ul className="social">

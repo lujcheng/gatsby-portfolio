@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { siteMetadata } from "../../gatsby-config";
-import favicon from "../assets/images/loader.gif"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { siteMetadata } from '../../gatsby-config';
+import favicon from '../assets/images/loader.gif';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      <link rel="icon" href={favicon}/>
+      <link rel="icon" href={favicon} />
       <title>{siteMetadata.title}</title>
     </Helmet>
     {children()}
@@ -26,7 +26,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 };
 
 export default TemplateWrapper;

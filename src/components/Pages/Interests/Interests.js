@@ -1,5 +1,5 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react';
+import Slider from 'react-slick';
 
 const settings = {
   // dots: true,
@@ -8,7 +8,7 @@ const settings = {
   speed: 700,
   slideToShow: 1,
   slideToScroll: 1,
-  swipeToSlide: true
+  swipeToSlide: true,
 };
 
 const Interests = () => (
@@ -24,15 +24,15 @@ const Interests = () => (
                 <blockquote>
                   <p>
                     Value investing
-                    <br/>
+                    <br />
                     Some of my favorite books:
-                    <br/>
+                    <br />
                     Financial Shenanigans - Howard M. Schilit
-                    <br/>
+                    <br />
                     Zero to One - Peter Thiel
-                    <br/>
+                    <br />
                     Quality of Earnings - Thornton L. O'Glove
-                    <br/>
+                    <br />
                     Good to Great - Jim Collins
                   </p>
                 </blockquote>
@@ -41,8 +41,9 @@ const Interests = () => (
                 <blockquote>
                   <p>
                     Photography
-                    <br/>
-                    Nothing too serious, I use a Fuji XT-1. The photos you see on this site are taken with a 35mm lens.
+                    <br />
+                    Nothing too serious, I use a Fuji XT-1. The photos you see
+                    on this site are taken with a 35mm lens.
                   </p>
                 </blockquote>
               </li>
@@ -50,8 +51,10 @@ const Interests = () => (
                 <blockquote>
                   <p>
                     Volleyball
-                    <br/>
-                    I love all sports, but this is one of the few I still play. A few years ago, I was part of a competitive league that held competitions across Canada and the United States of America.
+                    <br />I love all sports, but this is one of the few I still
+                    play. A few years ago, I was part of a competitive league
+                    that held competitions across Canada and the United States
+                    of America.
                   </p>
                 </blockquote>
               </li>
